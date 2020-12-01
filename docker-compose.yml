@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  work_sa:
+    image: "yvv4docker/pyanalyse"
+    container_name: pyanalyse
+    hostname: pyanalyse
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./scripts:/jupiter:rw
+    extra_hosts:
+      - "privoxy:192.168.1.12"
