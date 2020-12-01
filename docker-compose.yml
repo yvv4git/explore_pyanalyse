@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  work_sa:
+  pyanalyse:
     image: "yvv4docker/pyanalyse"
     container_name: pyanalyse
     hostname: pyanalyse
